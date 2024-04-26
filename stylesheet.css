@@ -1,0 +1,199 @@
+body {
+    background-color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #2487ce;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+.navbar {
+    min-height: 40px; 
+    max-height: 100px;
+}
+
+.navbar .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-brand {
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px; /* Adjust the spacing between items */
+}
+
+.card {
+    border: none;
+    margin-top: 30vh;
+}
+
+.card .titleword{
+    font-size: 70px;
+    margin: 15px;
+}
+
+.login-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+    margin: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-box:hover {
+    transform: scale(1.1);
+}
+.login-box.active {
+    transform: scale(0.9);
+}
+
+.login-box .Image1 {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.custom-box {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+    margin: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-box:hover {
+    transform: scale(1.1);
+}
+.custom-box.active {
+    transform: scale(0.9);
+}
+
+.custom-box .Image1 {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.content-box {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 200px;
+    max-height: 200px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+    margin: 30px 60px;
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.content-box:hover {
+    transform: scale(1.1);
+}
+.content-box.active {
+    transform: scale(0.9);
+}
+
+.content-box .image2 {
+    height: 25%;
+    width: 25%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.conlocation {
+    max-height: fit-content;
+    max-width: fit-content;
+    border-radius: 5px;
+    background-color: aquamarine;
+    color: green;
+    align-items: center;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    overflow: hidden;
+}
+
+.procontainer {
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 70px;
+    max-height: 70px;
+    padding: 5px;
+    margin: 20px 50px;
+    border-radius: 10px;
+    background-color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+}
+
+.enlarge-shrink {
+    animation: animate 1s infinite alternate; /* Change the animation duration as needed */
+}
+
+@keyframes animate {
+    0% { transform: scale(1); } /* Start with original size */
+    100% { transform: scale(1.5); } /* Enlarge to 1.5x size */
+}
